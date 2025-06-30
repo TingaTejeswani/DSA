@@ -3,7 +3,6 @@ class Solution:
         d={}
         
         for i in range(len(nums)):
-            rem=target-nums[i]
-            if rem in d:
-                return [d[rem],i]
-            d[nums[i]]=i
+            for j in range(i+1,len(nums)):
+                if nums[i]+nums[j]==target:
+                    return i,j
