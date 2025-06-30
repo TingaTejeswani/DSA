@@ -7,4 +7,4 @@ class Solution:
             gs=max(gs,cs)
             if cs<0:
                 cs=0
-        return gs            
+        return gs
